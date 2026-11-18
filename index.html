@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mercedes-Benz rasmiy uslubidagi premium landing page — hashamat, innovatsiya va kuch uyg‘unligi. Modellar, texnik xususiyatlar, konfigurator va test-drayvga yozilish." />
+  <meta name="keywords" content="Mercedes-Benz, S-Class, E-Class, C-Class, G-Class, GLS, AMG GT, test-drayv, premium avtomobillar" />
+  <meta name="author" content="Mercedes-Benz Uzbekistan" />
+  <title>Mercedes-Benz — Mukammallik har bir harakatda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATSIYA -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#bosh-sahifa" class="logo" aria-label="Mercedes-Benz bosh sahifasi">
+        <svg class="star-icon" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="2.5" />
+          <circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6" />
+          <polygon points="32,4 35.5,29.5 56.5,46 32,35.5 7.5,46 28.5,29.5" fill="currentColor" />
+        </svg>
+        <div class="logo-text">
+          <span class="brand-name">MERCEDES-BENZ</span>
+          <span class="brand-sub">The Best or Nothing</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav-menu" aria-label="Asosiy navigatsiya">
+        <ul class="nav-list">
+          <li><a href="#bosh-sahifa" class="nav-link active">Bosh sahifa</a></li>
+          <li><a href="#modellar" class="nav-link">Modellar</a></li>
+          <li><a href="#biz-haqimizda" class="nav-link">Biz haqimizda</a></li>
+          <li><a href="#afzalliklar" class="nav-link">Afzalliklar</a></li>
+          <li><a href="#galereya" class="nav-link">Galereya</a></li>
+          <li><a href="#konfigurator" class="nav-link">Tanlov</a></li>
+          <li><a href="#aloqa" class="nav-link">Aloqa</a></li>
+        </ul>
+        <a href="#test-drayv" class="btn btn-silver nav-cta">Test-drayv</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 4. HERO — BOSH SAHIFA -->
+    <section class="hero" id="bosh-sahifa">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1920&q=85"
+          alt="Qora Mercedes-Benz AMG GT hashamatli sport kupesi"
+          class="hero-img"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <span class="hero-badge fade-up">RASMIY EKSKLYUZIV KO‘RGAZMA</span>
+        <h1 class="hero-title fade-up">Mukammallik har bir harakatda</h1>
+        <p class="hero-subtitle fade-up">
+          Mercedes-Benz — hashamat, innovatsiya va kuch uyg‘unligi. Kelajak texnologiyalari va klassik nemis muhandisligining oliy namunasi.
+        </p>
+        <div class="hero-actions fade-up">
+          <a href="#modellar" class="btn btn-primary">Modellarni ko‘rish</a>
+          <a href="#test-drayv" class="btn btn-outline">Test-drayvga yozilish</a>
+        </div>
+
+        <div class="hero-metrics fade-up">
+          <div class="metric-item">
+            <strong>1886</strong>
+            <span>Asos solingan yil</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <strong>843 o.k.</strong>
+            <span>Maksimal AMG quvvati</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <strong>2.9 soniya</strong>
+            <span>0–100 km/soat tezlanish</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MERCEDES-BENZ MODELLARI -->
+    <section class="section models-section" id="modellar">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">AVTOMOBILLAR KATALOGI</span>
+          <h2 class="section-title">Mercedes-Benz Modellari</h2>
+          <p class="section-desc">
+            Har bir yo‘l va turmush tarzi uchun mukammal muhandislik yechimi. O‘zingizga mos toifani tanlang.
+          </p>
+        </div>
+
+        <!-- Filtrlash tugmalari -->
+        <div class="filter-bar reveal" role="tablist" aria-label="Modellarni toifa bo‘yicha filtrlash">
+          <button class="filter-btn active" data-filter="all">Barchasi</button>
+          <button class="filter-btn" data-filter="sedan">Sedanlar</button>
+          <button class="filter-btn" data-filter="suv">Yo‘ltanlamaslar (SUV)</button>
+          <button class="filter-btn" data-filter="sport">Sport &amp; AMG</button>
+        </div>
+
+        <!-- Modellar grid -->
+        <div class="models-grid" id="models-grid">
+          <!-- JavaScript orqali to'ldiriladi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BIZ HAQIMIZDA -->
+    <section class="section about-section" id="biz-haqimizda">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <div class="about-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1200&q=80"
+              alt="Mercedes-Benz klassik va zamonaviy muhandislik merosi"
+            />
+          </div>
+          <div class="about-floating-card">
+            <span class="floating-year">140+ YIL</span>
+            <p>Avtomobilsozlik tarixidagi uzluksiz innovatsiyalar va mutlaq yetakchilik.</p>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-tag">BREND MEROSI</span>
+          <h2 class="section-title">Avtomobil ixtirochisidan jahon etalonigacha</h2>
+          <p class="about-text">
+            1886-yilda Karl Benz dunyodagi ilk ichki yonuv dvigatelli avtomobilni patentlaganidan buyon, <strong>Mercedes-Benz</strong> global avtomobil sanoatining rivojlanish yo‘nalishini belgilab kelmoqda.
+          </p>
+          <p class="about-text">
+            Brendning yaratilishi muhandislik aniqligi va nafis estetika uyg‘unligiga asoslangan. Bugungi kunda MBUX sun’iy intellekt tizimlari, EQ elektr platformalari va AMG sport bo‘linmasi orqali kompaniya hashamat va xavfsizlikning eng yuqori standartlarini taqdim etadi.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <h4>Innovatsion texnologiyalar</h4>
+              <p>Avtonom boshqaruv yordamchilari, raqamli kokpit va intellektual yoritish tizimlari.</p>
+            </div>
+            <div class="pillar">
+              <h4>Hashamat va sifat</h4>
+              <p>Qo‘lda ishlangan Nappa charmi, tabiiy yog‘och bezaklar va akustik sukunat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. AFZALLIKLAR -->
+    <section class="section advantages-section" id="afzalliklar">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">NEGA AYNAN MERCEDES-BENZ</span>
+          <h2 class="section-title">Mutlaq ustunlik mezonlari</h2>
+          <p class="section-desc">
+            Har bir detal haydovchi va yo‘lovchilarga maksimal zavq hamda himoya berish uchun yaratilgan.
+          </p>
+        </div>
+
+        <div class="advantages-grid">
+          <article class="adv-card reveal">
+            <div class="adv-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Yuqori darajadagi xavfsizlik</h3>
+            <p>PRE-SAFE® tizimi, 360° radar nazorati va faol tormozlash texnologiyalari har soniyada sizni himoya qiladi.</p>
+          </article>
+
+          <article class="adv-card reveal">
+            <div class="adv-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3>Zamonaviy texnologiyalar</h3>
+            <p>MBUX Hyperscreen displeyi, ovozli boshqaruv va kengaytirilgan reallik (AR) navigatsiyasi.</p>
+          </article>
+
+          <article class="adv-card reveal">
+            <div class="adv-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3>Kuchli dvigatellar</h3>
+            <p>Biturbo V8 va gibrid EQ Boost agregatlari bir zumda javob beruvchi dinamika va tejamkorlikni ta’minlaydi.</p>
+          </article>
+
+          <article class="adv-card reveal">
+            <div class="adv-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10V6a2 2 0 012-2h6a2 2 0 012 2v4M3 12h18"/>
+              </svg>
+            </div>
+            <h3>Premium qulaylik</h3>
+            <p>AIRMATIC pnevmatik osma tizimi, massaj funksiyali o‘rindiqlar va Burmester® 4D audio tizimi.</p>
+          </article>
+
+          <article class="adv-card reveal">
+            <div class="adv-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>Ajoyib dizayn</h3>
+            <p>“Sensual Purity” dizayn falsafasi — aerodinamik mukammallik va ko‘zni qamashtiruvchi siluet.</p>
+          </article>
+
+          <article class="adv-card reveal">
+            <div class="adv-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3 3"/>
+              </svg>
+            </div>
+            <h3>Ishonchlilik</h3>
+            <p>Eng og‘ir iqlim va yo‘l sinovlaridan o‘tgan mustahkam konstruksiya va uzoq yillik kafolat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. GALEREYA -->
+    <section class="section gallery-section" id="galereya">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">VIZUAL ESTETIKA</span>
+          <h2 class="section-title">Eksklyuziv Galereya</h2>
+          <p class="section-desc">
+            Har bir burchakdan mukammallik. Rasmni kattalashtirib ko‘rish uchun ustiga bosing.
+          </p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- JavaScript orqali render qilinadi -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 & 10. INTERAKTIV AVTOMOBIL TANLASH VA TEXNIK XUSUSIYATLAR -->
+    <section class="section configurator-section" id="konfigurator">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">INDIVIDUAL KONFIGURATOR</span>
+          <h2 class="section-title">O‘z Mercedes-Benz avtomobilingizni yarating</h2>
+          <p class="section-desc">
+            Model, kuzov rangi va komplektatsiyani tanlang — texnik ko‘rsatkichlar real vaqtda yangilanadi.
+          </p>
+        </div>
+
+        <div class="config-wrapper reveal">
+          <!-- Chap panel: Tanlov boshqaruvi -->
+          <div class="config-controls">
+            <div class="control-group">
+              <label for="config-model-select" class="control-label">1. Avtomobil modelini tanlang</label>
+              <select id="config-model-select" class="premium-select">
+                <option value="s-class">Mercedes-Benz S-Class (S 580 4MATIC)</option>
+                <option value="e-class">Mercedes-Benz E-Class (E 450 4MATIC)</option>
+                <option value="c-class">Mercedes-Benz C-Class (C 300 AMG Line)</option>
+                <option value="g-class">Mercedes-Benz G-Class (AMG G 63)</option>
+                <option value="gls">Mercedes-Benz GLS (GLS 600 Maybach)</option>
+                <option value="amg-gt">Mercedes-Benz AMG GT (GT 63 S E Performance)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <span class="control-label">2. Kuzov rangini tanlang: <strong id="selected-color-name">Obsidian Qora Metallik</strong></span>
+              <div class="color-swatches" id="color-swatches" role="radiogroup" aria-label="Kuzov rangi">
+                <button type="button" class="swatch active" data-color="Obsidian Qora Metallik" data-hex="#0f1115" style="background-color: #0f1115;" aria-label="Obsidian Qora Metallik"></button>
+                <button type="button" class="swatch" data-color="Iridium Kumushrang" data-hex="#c0c6ce" style="background-color: #c0c6ce;" aria-label="Iridium Kumushrang"></button>
+                <button type="button" class="swatch" data-color="MANUFAKTUR Olmos Oq" data-hex="#f3f4f6" style="background-color: #f3f4f6;" aria-label="MANUFAKTUR Olmos Oq"></button>
+                <button type="button" class="swatch" data-color="Selenit Kulrang" data-hex="#525866" style="background-color: #525866;" aria-label="Selenit Kulrang"></button>
+                <button type="button" class="swatch" data-color="Nautic Ko‘k Metallik" data-hex="#172554" style="background-color: #172554;" aria-label="Nautic Ko‘k Metallik"></button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <span class="control-label">3. Komplektatsiyani tanlang</span>
+              <div class="trim-options" id="trim-options">
+                <button type="button" class="trim-btn active" data-trim="Progressive" data-hp-bonus="0" data-price-add="0">
+                  <strong>Progressive</strong>
+                  <span>Standart hashamat to‘plami</span>
+                </button>
+                <button type="button" class="trim-btn" data-trim="AMG Line" data-hp-bonus="35" data-price-add="14500">
+                  <strong>AMG Line</strong>
+                  <span>Sport aerodinamika va +35 o.k.</span>
+                </button>
+                <button type="button" class="trim-btn" data-trim="MANUFAKTUR Exclusive" data-hp-bonus="60" data-price-add="29000">
+                  <strong>MANUFAKTUR Exclusive</strong>
+                  <span>Eksklyuziv salon va +60 o.k.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="config-summary-box">
+              <div>
+                <span class="summary-label">Tanlangan konfiguratsiya:</span>
+                <h4 id="config-summary-title">Mercedes-Benz S-Class • Progressive</h4>
+              </div>
+              <div class="summary-price">
+                <span>Taxminiy qiymati</span>
+                <strong id="config-price">$128,000</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- O'ng panel: Avtomobil ko'rinishi va Texnik xususiyatlar -->
+          <div class="config-preview">
+            <div class="preview-stage" id="preview-stage">
+              <div class="stage-glow" id="stage-glow"></div>
+              <img
+                id="config-car-img"
+                src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1200&q=85"
+                alt="Tanlangan Mercedes-Benz modeli ko‘rinishi"
+              />
+              <span class="stage-badge" id="stage-trim-badge">PROGRESSIVE</span>
+            </div>
+
+            <!-- 10. TEXNIK XUSUSIYATLAR KARTOCHKALARI -->
+            <div class="specs-grid">
+              <div class="spec-card">
+                <span class="spec-label">Dvigatel turi</span>
+                <strong class="spec-value" id="spec-engine">4.0L V8 Biturbo + EQ</strong>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">Quvvat (Ot kuchi)</span>
+                <strong class="spec-value"><span id="spec-hp" class="count-num">503</span> o.k.</strong>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">Maksimal tezlik</span>
+                <strong class="spec-value"><span id="spec-speed" class="count-num">250</span> km/soat</strong>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">0–100 km/soat</span>
+                <strong class="spec-value"><span id="spec-accel">4.4</span> soniya</strong>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">Uzatmalar qutisi</span>
+                <strong class="spec-value" id="spec-gearbox">9G-TRONIC Avtomat</strong>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">Yonilg‘i turi</span>
+                <strong class="spec-value" id="spec-fuel">Benzin / Mild-Hybrid</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. TEST-DRAYVGA YOZILISH -->
+    <section class="section testdrive-section" id="test-drayv">
+      <div class="container testdrive-grid">
+        <div class="testdrive-info reveal">
+          <span class="section-tag">SHAXSIY TAJRIBA</span>
+          <h2 class="section-title">Rul boshqaruvidagi mukammallikni his eting</h2>
+          <p class="section-desc">
+            O‘zingizga ma’qul kelgan Mercedes-Benz modelini shahar va trassa sharoitida sinab ko‘rish uchun shaxsiy test-drayvga yoziling. Menejerimiz siz bilan bog‘lanib, qulay vaqtni tasdiqlaydi.
+          </p>
+          <ul class="td-perks">
+            <li>Shaxsiy maslahatchi hamrohligida 45 daqiqalik marshrut</li>
+            <li>Barcha xavfsizlik va MBUX tizimlari bo‘yicha to‘liq taqdimot</li>
+            <li>VIP kutish zali va maxsus takliflar</li>
+          </ul>
+        </div>
+
+        <form class="premium-form reveal" id="testdrive-form" novalidate>
+          <h3>Test-drayvga ariza qoldirish</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="td-name">Ism va familiya *</label>
+              <input type="text" id="td-name" name="name" placeholder="Masalan: Sardor Karimov" required />
+              <small class="error-msg" id="err-td-name"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="td-phone">Telefon raqami *</label>
+              <input type="tel" id="td-phone" name="phone" placeholder="+998 90 123 45 67" required />
+              <small class="error-msg" id="err-td-phone"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="td-email">Elektron pochta *</label>
+              <input type="email" id="td-email" name="email" placeholder="ism@example.uz" required />
+              <small class="error-msg" id="err-td-email"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="td-model">Avtomobil modeli *</label>
+              <select id="td-model" name="model" required>
+                <option value="">Modelni tanlang...</option>
+                <option value="Mercedes-Benz S-Class">Mercedes-Benz S-Class</option>
+                <option value="Mercedes-Benz E-Class">Mercedes-Benz E-Class</option>
+                <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                <option value="Mercedes-Benz G-Class">Mercedes-Benz G-Class</option>
+                <option value="Mercedes-Benz GLS">Mercedes-Benz GLS</option>
+                <option value="Mercedes-Benz AMG GT">Mercedes-Benz AMG GT</option>
+              </select>
+              <small class="error-msg" id="err-td-model"></small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="td-date">Qulay sana *</label>
+            <input type="date" id="td-date" name="date" required />
+            <small class="error-msg" id="err-td-date"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="td-note">Qo‘shimcha izoh</label>
+            <textarea id="td-note" name="note" rows="3" placeholder="Maxsus istaklar yoki qulay vaqt oralig‘i..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Yuborish</button>
+          <div class="form-status" id="td-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 12. MIJOZLAR FIKRI -->
+    <section class="section testimonials-section" id="fikrlar">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">MIJOZLAR ISHONCHI</span>
+          <h2 class="section-title">Mercedes-Benz egalari fikrlari</h2>
+        </div>
+
+        <div class="testimonial-slider reveal">
+          <button type="button" class="slider-arrow prev" id="prev-review" aria-label="Oldingi fikr">&#10094;</button>
+
+          <div class="testimonial-card" id="testimonial-card">
+            <div class="stars" id="review-stars" aria-label="5 yulduzli baho">★★★★★</div>
+            <blockquote class="review-text" id="review-text">
+              “S-Class boshqaruvidagi sokinlik va pnevmatik osmaning yumshoqligi boshqa hech bir avtomobilda uchramaydi. Har bir safar haqiqiy dam olishga aylanadi.”
+            </blockquote>
+            <div class="review-author">
+              <strong id="review-author">Jamshid Rahimov</strong>
+              <span id="review-car">Mercedes-Benz S 580 egasi</span>
+            </div>
+          </div>
+
+          <button type="button" class="slider-arrow next" id="next-review" aria-label="Keyingi fikr">&#10095;</button>
+        </div>
+
+        <div class="slider-dots" id="review-dots" role="tablist" aria-label="Fikrlar sahifalari"></div>
+      </div>
+    </section>
+
+    <!-- 13. FAQ — KO'P BERILADIGAN SAVOLLAR -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header reveal">
+          <span class="section-tag">MA’LUMOT MARKAZI</span>
+          <h2 class="section-title">Ko‘p beriladigan savollar</h2>
+        </div>
+
+        <div class="faq-list reveal" id="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Mercedes-Benz qaysi davlatda yaratilgan?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Mercedes-Benz Germaniyada yaratilgan. Kompaniya shtab-kvartirasi Shtutgart shahrida joylashgan bo‘lib, brend tarixi 1886-yilda Karl Benz va Gottlib Daymler ixtirolaridan boshlanadi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Eng mashhur modeli qaysi?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Dunyo miqyosida biznes-klass etaloni hisoblangan <strong>E-Class</strong> hamda flagman hashamat ramzi bo‘lgan <strong>S-Class</strong> va afsonaviy yo‘ltanlamas <strong>G-Class</strong> brendning eng mashhur modellari sanaladi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>AMG nimani anglatadi?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>AMG</strong> — asoschilar Hans Verner Aufrecht (A), Erhard Melcher (M) va Aufrecht tug‘ilgan Grossaspach (G) shahri nomlarining bosh harflaridan tashkil topgan. Bu Mercedes-Benz’ning yuqori unumdorlikka ega sport bo‘linmasidir.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Test-drayvga qanday yozilish mumkin?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yuqoridagi “Test-drayv” bo‘limidagi shaklni to‘ldirib, o‘zingizga yoqqan model va qulay sanani tanlashingiz kifoya. Amaldagi haydovchilik guvohnomasi talab etiladi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Avtomobillar haqida qayerdan batafsil ma'lumot olish mumkin?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>“Modellar” bo‘limidagi har bir avtomobil kartochkasida “Batafsil” tugmasini bosish orqali yoki “Aloqa” bo‘limi orqali mutaxassislarimizga murojaat qilib to‘liq ma’lumot olishingiz mumkin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. ALOQA BO'LIMI -->
+    <section class="section contact-section" id="aloqa">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">BIZ BILAN BOG‘LANING</span>
+          <h2 class="section-title">Rasmiy dilerlik markazi</h2>
+          <p class="section-desc">
+            Avtomobil xaridi, texnik xizmat ko‘rsatish yoki korporativ hamkorlik bo‘yicha savollaringiz bormi? Biz har doim aloqadamiz.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">Telefon raqami (namuna)</span>
+              <a href="tel:+998712000000">+998 (71) 200-00-00</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Elektron pochta (namuna)</span>
+              <a href="mailto:info@mercedes-benz-demo.uz">info@mercedes-benz-demo.uz</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Manzil (namuna)</span>
+              <p>Toshkent shahri, Amir Temur shoh ko‘chasi, 108-uy</p>
+            </div>
+          </div>
+
+          <div class="social-links" aria-label="Ijtimoiy tarmoqlar">
+            <a href="#aloqa" class="social-btn" data-social="Instagram" aria-label="Instagram">IG</a>
+            <a href="#aloqa" class="social-btn" data-social="Telegram" aria-label="Telegram">TG</a>
+            <a href="#aloqa" class="social-btn" data-social="YouTube" aria-label="YouTube">YT</a>
+            <a href="#aloqa" class="social-btn" data-social="Facebook" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+
+        <form class="premium-form reveal" id="contact-form" novalidate>
+          <h3>Xabar yuborish</h3>
+
+          <div class="form-group">
+            <label for="ct-name">Ismingiz *</label>
+            <input type="text" id="ct-name" name="name" placeholder="Ismingizni kiriting" required />
+            <small class="error-msg" id="err-ct-name"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="ct-email">Elektron pochta *</label>
+            <input type="email" id="ct-email" name="email" placeholder="email@namuna.uz" required />
+            <small class="error-msg" id="err-ct-email"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="ct-message">Xabar matni *</label>
+            <textarea id="ct-message" name="message" rows="4" placeholder="Savolingiz yoki murojaatingizni yozing..." required></textarea>
+            <small class="error-msg" id="err-ct-message"></small>
+          </div>
+
+          <button type="submit" class="btn btn-silver btn-full">Xabarni yuborish</button>
+          <div class="form-status" id="ct-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 15. FOOTER — PASTKI QISM -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#bosh-sahifa" class="logo">
+          <svg class="star-icon" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true">
+            <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="2.5" />
+            <polygon points="32,4 35.5,29.5 56.5,46 32,35.5 7.5,46 28.5,29.5" fill="currentColor" />
+          </svg>
+          <div class="logo-text">
+            <span class="brand-name">MERCEDES-BENZ</span>
+            <span class="brand-sub">The Best or Nothing</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          Hashamat, xavfsizlik va yuqori texnologiyalar uyg‘unligi. Har bir sayohatda mutlaq mukammallik.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tezkor havolalar</h4>
+        <ul>
+          <li><a href="#bosh-sahifa">Bosh sahifa</a></li>
+          <li><a href="#modellar">Modellar</a></li>
+          <li><a href="#biz-haqimizda">Biz haqimizda</a></li>
+          <li><a href="#afzalliklar">Afzalliklar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Xizmatlar</h4>
+        <ul>
+          <li><a href="#galereya">Galereya</a></li>
+          <li><a href="#konfigurator">Avtomobil tanlash</a></li>
+          <li><a href="#test-drayv">Test-drayv</a></li>
+          <li><a href="#faq">Ko‘p beriladigan savollar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Aloqa (Namuna)</h4>
+        <p>+998 (71) 200-00-00</p>
+        <p>info@mercedes-benz-demo.uz</p>
+        <p>Toshkent sh., Amir Temur 108</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Mercedes-Benz Showcase. Barcha huquqlar himoyalangan.</p>
+      <button type="button" class="back-to-top" id="back-to-top" aria-label="Sahifa yuqorisiga qaytish">
+        Yuqoriga qaytish &#8593;
+      </button>
+    </div>
+  </footer>
+
+  <!-- MODEL BATAFSIL MODAL OYNASI -->
+  <div class="modal" id="model-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Modalni yopish">&times;</button>
+      <div class="modal-body" id="modal-body">
+        <!-- JavaScript orqali to'ldiriladi -->
+      </div>
+    </div>
+  </div>
+
+  <!-- GALEREYA LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Katta rasm ko‘rish oynasi" hidden>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Galereyani yopish">&times;</button>
+    <button type="button" class="lightbox-nav prev" id="lightbox-prev" aria-label="Oldingi rasm">&#10094;</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button type="button" class="lightbox-nav next" id="lightbox-next" aria-label="Keyingi rasm">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
